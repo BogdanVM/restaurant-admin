@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OspatarTask">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/customborder"
+            android:text="DATE ANGAJAT"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Adauga poza: "
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/chef_ImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chef_v2_round" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customborder"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nume"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/nameEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Popescu Ion" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customborder"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sex"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/sexes"
+                android:prompt="@string/sexesPrompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customborder"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/jobsSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/jobs"
+                android:prompt="@string/sexesPrompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customborder"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numar de telefon"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/phoneEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0761234567" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customborder"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/mailEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="nume@email.com" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customborder"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNP"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/cnpEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1961211084345" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveEmployeeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salveaza angajat"/>
+    </LinearLayout>
+</ScrollView>
