@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Wed Apr 03 17:11:55 EEST 2019
+0.baseType=DIRECTORY
+0.base=/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/dex/debug/mergeDexDebug/out
+0.path=classes.dex
+0.set=DEX
+count=1
