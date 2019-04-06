@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Log In"
+        android:text="@string/log_in_text"
         android:textColor="@android:color/white"
         android:textSize="30sp"
         app:fontFamily="sans-serif-condensed"
@@ -31,7 +31,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Username"
+        android:text="@string/username_text"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
 
@@ -47,17 +47,24 @@
         android:id="@+id/usernameEditTxt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+
         android:background="@drawable/rounded_edittext"
         android:drawableLeft="@drawable/ic_person_white"
+        android:drawableStart="@drawable/ic_person_white"
         android:ems="10"
+
         android:inputType="textPersonName"
         android:textColor="@android:color/white"
+        android:hint="@string/username_hint"
+        android:textColorHint="@color/greyHintColor"
+
         app:layout_constraintBottom_toTopOf="@+id/pwdTxtView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -89,14 +96,19 @@
         android:id="@+id/pwdEditTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+
         android:ems="10"
         android:inputType="textPassword"
+        android:hint="@string/password_hint"
+        android:textColorHint="@color/greyHintColor"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -105,8 +117,9 @@
         app:layout_constraintVertical_bias="0.0"
 
         android:background="@drawable/rounded_edittext"
-        android:textColor="@android:color/white"
-        android:drawableLeft="@drawable/ic_lock"/>
+        android:textColor="@color/whiteColor"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawableStart="@drawable/ic_lock"/>
 
     <Button
         android:id="@+id/loginBtn"
@@ -114,8 +127,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/white"
-        android:text="Login"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:background="#ECE90D"
+        android:text="@string/login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pwdEditTxt"
         app:layout_constraintVertical_bias="0.34"
@@ -127,12 +142,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/white"
-        android:text="Sign up"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:background="#ECE90D"
+        android:textColor="@android:color/black"
+        android:text="@string/sign_up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginBtn"
-        app:layout_constraintVertical_bias="0.212"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.040"
+        tools:layout_editor_absoluteX="0dp"
+        />
 
 
 </android.support.constraint.ConstraintLayout>
