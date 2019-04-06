@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ecran"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Reincarca_Planificare"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <RelativeLayout
+        android:id="@+id/planificare_restaurant"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@+id/layout_butoane"
+        android:background="#FFF8E9EE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/ecran"
+        app:layout_constraintStart_toEndOf="@+id/layout_butoane"
+        app:layout_constraintTop_toTopOf="parent"></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_butoane"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/button_reincarca_planificarea"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Reincarca" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
