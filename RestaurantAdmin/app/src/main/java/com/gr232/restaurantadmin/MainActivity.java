@@ -17,9 +17,6 @@ public class MainActivity extends AppCompatActivity {
     private Button mLoginBtn;
     private Button mSignUpBtn;
 
-    private AnimationDrawable mAnimationDrawable;
-    private ConstraintLayout mConstraintLayout;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,14 +31,12 @@ public class MainActivity extends AppCompatActivity {
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
             }
         });
 
         mSignUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
             }
         });
     }
@@ -55,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startAnimation() {
-        mConstraintLayout = findViewById(R.id.loginActivityLayout);
+        ConstraintLayout mConstraintLayout = findViewById(R.id.loginActivityLayout);
 
-        mAnimationDrawable = (AnimationDrawable) mConstraintLayout.getBackground();
+        AnimationDrawable mAnimationDrawable = (AnimationDrawable) mConstraintLayout.getBackground();
         mAnimationDrawable.setEnterFadeDuration(2500);
         mAnimationDrawable.setExitFadeDuration(2500);
         mAnimationDrawable.start();

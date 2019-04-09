@@ -4,18 +4,20 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-abstract class User {
-    private String firstName;
-    private String lastName;
-    private String photo;
-    private List<Shift> shifts;
+public abstract class User {
+    protected String firstName;
+    protected String lastName;
+    protected String photo;
+    protected List<Shift> shifts;
+    protected Integer restaurantId;
 
     public User() { }
 
-    public User(String firstName, String lastName, String photo) {
+    public User(String firstName, String lastName, String photo, Integer id) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.photo = photo;
+        this.restaurantId = id;
 
         this.shifts = new ArrayList<>();
     }
@@ -56,5 +58,11 @@ abstract class User {
         this.shifts.add(shift);
     }
 
+    public Integer getRestaurantId() {
+        return restaurantId;
+    }
 
+    public void setRestaurantId(Integer restaurantId) {
+        this.restaurantId = restaurantId;
+    }
 }
