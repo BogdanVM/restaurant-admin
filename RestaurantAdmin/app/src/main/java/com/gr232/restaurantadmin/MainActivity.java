@@ -1,5 +1,6 @@
 package com.gr232.restaurantadmin;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mSignUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
             }
         });
     }
