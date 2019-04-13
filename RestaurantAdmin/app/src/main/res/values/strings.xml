@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RestaurantAdmin</string>
+    <string name="login_title">Log In</string>
+    <string name="user_name_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="password_hint">Your Password</string>
+    <string name="username_hint">John Doe</string>
+    <string name="username_text">Username</string>
+    <string name="log_in_text">Log In</string>
+</resources>
