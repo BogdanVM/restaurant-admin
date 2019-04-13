@@ -18,6 +18,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.gr232.restaurantadmin.SignUpActivity" />
         <activity android:name="com.gr232.restaurantadmin.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +26,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.gr232.restaurantadmin.Main2Activity" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.gr232.restaurantadmin.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

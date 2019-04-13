@@ -70,24 +70,24 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /home/bogdanvm/.gra
 		ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.gr232.restaurantadmin.SignUpActivity
+ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:12:9-51
+	android:name
+		ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:12:19-49
 activity#com.gr232.restaurantadmin.MainActivity
-ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:12:9-17:20
+ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:13:9-19:20
 	android:name
-		ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:12:19-47
+		ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:13:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:13:13-16:29
+ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
-ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:14:17-68
+ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:14:25-66
+		ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:15:17-76
+ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:15:27-74
-activity#com.gr232.restaurantadmin.Main2Activity
-ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:19:9-60
-	android:name
-		ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:19:19-48
+		ADDED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml:17:27-74
 uses-sdk
 INJECTED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/src/main/AndroidManifest.xml
