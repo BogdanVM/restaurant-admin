@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,12 +53,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startAnimation() {
-        ConstraintLayout mConstraintLayout = findViewById(R.id.loginActivityLayout);
+        ConstraintLayout constraintLayout = findViewById(R.id.loginActivityLayout);
 
-        AnimationDrawable mAnimationDrawable = (AnimationDrawable) mConstraintLayout.getBackground();
-        mAnimationDrawable.setEnterFadeDuration(2500);
-        mAnimationDrawable.setExitFadeDuration(2500);
-        mAnimationDrawable.start();
+        AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(3500);
+        animationDrawable.setExitFadeDuration(3500);
+        animationDrawable.start();
     }
 
 
