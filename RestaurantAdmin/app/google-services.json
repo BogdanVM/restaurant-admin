@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "88275490059",
+    "firebase_url": "https://restaurant-fabulos.firebaseio.com",
+    "project_id": "restaurant-fabulos",
+    "storage_bucket": "restaurant-fabulos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88275490059:android:5921f2285146830a",
+        "android_client_info": {
+          "package_name": "com.example.dana_maria.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88275490059-rfii8l37o6e3imsd3jqc53slph3vqpcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvZgUUrg1OJsKUs5UE5slARfdYC2CxVl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88275490059-rfii8l37o6e3imsd3jqc53slph3vqpcm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88275490059:android:c70c70021de8a9cc",
+        "android_client_info": {
+          "package_name": "com.example.restaurant_administrator_v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88275490059-684atohims2tnl4oouka7sr8ldl2o756.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.restaurant_administrator_v2",
+            "certificate_hash": "ed7d71c3c816e2c0496a47e9e35c2b16c9837c06"
+          }
+        },
+        {
+          "client_id": "88275490059-rfii8l37o6e3imsd3jqc53slph3vqpcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvZgUUrg1OJsKUs5UE5slARfdYC2CxVl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88275490059-rfii8l37o6e3imsd3jqc53slph3vqpcm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88275490059:android:1886a9b222559f45",
+        "android_client_info": {
+          "package_name": "com.gr232.restaurantadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88275490059-jol3iossdru78ar00id7qvi52riemgvk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gr232.restaurantadmin",
+            "certificate_hash": "f8c6dc949ca93827aefc0c958a2b235fefc50e2d"
+          }
+        },
+        {
+          "client_id": "88275490059-rfii8l37o6e3imsd3jqc53slph3vqpcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvZgUUrg1OJsKUs5UE5slARfdYC2CxVl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88275490059-rfii8l37o6e3imsd3jqc53slph3vqpcm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,6 +6,12 @@ public abstract class Employee extends User {
     protected Double salary;
     protected Calendar hireDate;
 
+    public Employee(String userId, String firstName, String lastName, String photo,
+                    Double salary, Calendar hireDate) {
+        super(userId, firstName, lastName, photo);
+        this.salary = salary;
+        this.hireDate = hireDate;
+    }
 
     public Double getSalary() {
         return salary;
