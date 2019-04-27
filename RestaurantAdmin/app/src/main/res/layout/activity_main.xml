@@ -133,7 +133,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/rounded_button"
+        android:background="@drawable/rounded_button_login"
         android:text="@string/log_in_text"
         android:textColor="@color/whiteColor"
         app:layout_constraintBottom_toBottomOf="parent"

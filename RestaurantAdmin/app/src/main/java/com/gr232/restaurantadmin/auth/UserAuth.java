@@ -23,6 +23,16 @@ public class UserAuth {
         return mAuth.getCurrentUser();
     }
 
+
+    /**
+     *
+     * @param email = emailul utilizatorului
+     * @param password = parola utilizatorului
+     * @return = utilizatorul logat, daca logarea s-a efectuat cu succes
+     * @throws InvalidCredentialsException = daca logarea nu s-a efectuat cu succes, atunci
+     * este intoarsa aceasta exceptie;
+     *
+     */
     public FirebaseUser signInUser(String email, String password) throws InvalidCredentialsException {
         if (!email.isEmpty()) {
             if (!password.isEmpty()) {

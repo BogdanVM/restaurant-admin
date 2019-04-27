@@ -226,7 +226,7 @@
         android:layout_marginRight="80dp"
 
         android:layout_marginBottom="8dp"
-        android:background="@drawable/rounded_button"
+        android:background="@drawable/rounded_button_login"
         android:text="@string/sign_up"
         android:textColor="@color/whiteColor"
         app:layout_constraintBottom_toTopOf="@+id/backBtnSignUp"
@@ -245,7 +245,7 @@
         android:layout_marginRight="80dp"
 
         android:layout_marginBottom="5dp"
-        android:background="@drawable/rounded_button"
+        android:background="@drawable/rounded_button_login"
         android:text="@string/back_label"
 
         android:textColor="@color/whiteColor"

@@ -701,7 +701,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable rounded_button
+drawable rounded_button_login
+drawable rounded_button_menu
 drawable rounded_edittext
 drawable textlines
 drawable tooltip_frame_dark
@@ -746,6 +747,7 @@ id beginning
 id blocking
 id bottom
 id bottomBorderLogin
+id bottomBorderMainMenu
 id bottomBorderSignUp
 id buttonPanel
 id cancel_action
@@ -802,6 +804,8 @@ id loginBtn
 id loginTxtView
 id mailEditTxtLogIn
 id mailEditTxtSignUp
+id mainMenuLayout
+id manageLayoutBtn
 id media_actions
 id message
 id middle
@@ -842,6 +846,8 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seeEmployeeBtnMainMenu
+id seeMenuBtnMainMenu
 id select_dialog_listview
 id shortcut
 id showCustom
@@ -873,6 +879,7 @@ id textSpacerNoTitle
 id time
 id title
 id titleDividerNoCustom
+id titleTxtViewMainMenu
 id title_template
 id top
 id topPanel

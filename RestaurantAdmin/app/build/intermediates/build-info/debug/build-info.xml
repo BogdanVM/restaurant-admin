@@ -2,40 +2,74 @@
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="24"
-    build-mode="COLD"
+    build-mode="FULL"
     density="xxxhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
     plugin-version="3.3.2"
-    timestamp="1555684581848"
+    timestamp="1556358814625"
     token="-5174279563559135109"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="118" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="5" />
+        duration="0" />
     <task
         name="verifier"
-        duration="1" />
+        duration="0" />
 
     <artifact
+        location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
+    <artifact
+        location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
         location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1555684371541"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="1556358814625"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
+        <artifact
+            location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
@@ -43,10 +77,7 @@
             location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
@@ -58,25 +89,16 @@
             location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
+            location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
             location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1555684581848"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
     </build>
 
