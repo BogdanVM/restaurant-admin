@@ -1,4 +1,7 @@
-#Sat Apr 13 13:01:00 EEST 2019
+#Fri Apr 19 17:33:23 EEST 2019
 base.0=/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/transforms/dexMerger/debug/10
+path.1=classes2.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/transforms/dexMerger/debug/10

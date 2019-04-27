@@ -4,7 +4,7 @@
             "outputFile": "/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "/home/bogdanvm/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bb016f55709800f9b9f2e7bea9e25022/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "source": "/home/bogdanvm/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/7b10aa3a772b9a9626041817b639e0bd/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

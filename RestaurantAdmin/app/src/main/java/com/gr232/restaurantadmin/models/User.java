@@ -5,21 +5,19 @@ import java.util.Calendar;
 import java.util.List;
 
 public abstract class User {
+    protected String userId;
     protected String firstName;
     protected String lastName;
     protected String photo;
-    protected List<Shift> shifts;
-    protected Integer restaurantId;
+    protected String type;
 
     public User() { }
 
-    public User(String firstName, String lastName, String photo, Integer id) {
+    public User(String userId, String firstName, String lastName, String photo) {
+        this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.photo = photo;
-        this.restaurantId = id;
-
-        this.shifts = new ArrayList<>();
     }
 
     public String getFirstName() {
@@ -46,23 +44,15 @@ public abstract class User {
         this.photo = profilePhoto;
     }
 
-    public List<Shift> getShifts() {
-        return shifts;
+    public String getUserId() {
+        return userId;
     }
 
-    public void addShift(Calendar startDate, Calendar endDate) {
-        this.shifts.add(new Shift(startDate, endDate));
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
-    public void addShift(Shift shift) {
-        this.shifts.add(shift);
-    }
-
-    public Integer getRestaurantId() {
-        return restaurantId;
-    }
-
-    public void setRestaurantId(Integer restaurantId) {
-        this.restaurantId = restaurantId;
+    public String getType() {
+        return type;
     }
 }

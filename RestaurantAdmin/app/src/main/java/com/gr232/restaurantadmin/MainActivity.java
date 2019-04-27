@@ -9,15 +9,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.gr232.restaurantadmin.auth.UserAuth;
+import com.gr232.restaurantadmin.models.InvalidCredentialsException;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText mUserNameEditTxt;
+    private EditText mEmailEditTxt;
     private EditText mPwdEditTxt;
-
     private Button mLoginBtn;
-    private Button mSignUpBtn;
+    private UserAuth mUserAuth;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,27 +32,53 @@ public class MainActivity extends AppCompatActivity {
         setButtonClickEvents();
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        FirebaseUser user = mUserAuth.getLoggedUser();
+        getSignedUser(user);
+    }
+
+    private void getSignedUser(FirebaseUser user) {
+        if (user != null) {
+            Intent intent = new Intent(MainActivity.this, MainMenu.class);
+            intent.putExtra("user", user);
+
+            startActivity(intent);
+            finish();
+        }
+    }
+
     private void setButtonClickEvents() {
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            }
-        });
+                String email = mEmailEditTxt.getText().toString().trim();
+                String password = mPwdEditTxt.getText().toString().trim();
 
-        mSignUpBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
+                try {
+                    FirebaseUser user = mUserAuth.signInUser(email, password);
+                    getSignedUser(user);
+
+                } catch (InvalidCredentialsException e) {
+                    mEmailEditTxt.setText("");
+                    mPwdEditTxt.setText("");
+
+                    mPwdEditTxt.setError("Incorrect email or password");
+                }
             }
         });
     }
 
+
     private void initViews() {
         mLoginBtn = findViewById(R.id.loginBtn);
-        mSignUpBtn = findViewById(R.id.signupBtn);
 
-        mUserNameEditTxt = findViewById(R.id.usernameEditTxt);
+        mEmailEditTxt = findViewById(R.id.mailEditTxtLogIn);
         mPwdEditTxt = findViewById(R.id.pwdEditTxt);
+
+        mUserAuth = new UserAuth(getApplicationContext());
     }
 
     private void startAnimation() {
@@ -60,6 +89,4 @@ public class MainActivity extends AppCompatActivity {
         animationDrawable.setExitFadeDuration(3500);
         animationDrawable.start();
     }
-
-
 }
