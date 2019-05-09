@@ -1,8 +1,9 @@
 package com.gr232.restaurantadmin.models;
 
+import java.io.Serializable;
 import java.util.Calendar;
 
-public abstract class Employee extends User {
+public class Employee extends User implements Serializable {
     protected Double salary;
     protected Calendar hireDate;
 
@@ -11,6 +12,9 @@ public abstract class Employee extends User {
         super(userId, firstName, lastName, photo);
         this.salary = salary;
         this.hireDate = hireDate;
+    }
+
+    public Employee() {
     }
 
     public Double getSalary() {

@@ -14,4 +14,9 @@
     <string name="phone_number_hint">0712345678</string>
     <string name="back_label">Back</string>
     <string name="font_family_1">sans-serif-condensed</string>
+
+    <string-array name="employee_types" >
+        <item> Chef </item>
+        <item> Waiter </item>
+    </string-array>
 </resources>

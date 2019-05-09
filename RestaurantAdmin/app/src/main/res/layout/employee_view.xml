@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/nameTxtViewRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:text="Popescu Ion"
+            android:textColor="@color/whiteColor"
+            app:fontFamily="@string/font_family_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/empTypeTxtViewRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="ospatar"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/whiteColor"
+            app:fontFamily="@string/font_family_1"
+            app:layout_constraintEnd_toEndOf="@+id/nameTxtViewRecyclerView"
+            app:layout_constraintHorizontal_bias="0.433"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTxtViewRecyclerView" />
+
+        <ImageButton
+            android:id="@+id/editBtnRecyclerView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/yellow_button"
+            android:scaleType="center"
+            android:src="@drawable/ic_edit"
+            android:text="Edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/removeBtnRecyclerView" />
+
+        <ImageButton
+            android:id="@+id/removeBtnRecyclerView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/yellow_button"
+            android:src="@drawable/ic_remove"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/infoBtnRecyclerView" />
+
+        <ImageButton
+            android:id="@+id/infoBtnRecyclerView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/yellow_button"
+            android:scaleType="center"
+            android:src="@drawable/ic_info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/whiteColor"
+            app:layout_constraintTop_toBottomOf="@+id/empTypeTxtViewRecyclerView"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

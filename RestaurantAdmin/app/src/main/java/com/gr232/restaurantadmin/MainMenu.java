@@ -1,10 +1,13 @@
 package com.gr232.restaurantadmin;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -15,8 +18,12 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 public class MainMenu extends AppCompatActivity {
 
-    FirebaseFirestore mFirestoreReference;
-    FirebaseUser mFirebaseUser;
+    private FirebaseFirestore mFirestoreReference;
+    private FirebaseUser mFirebaseUser;
+
+    private Button mSeeEmployeesBtn;
+    private Button mSeeLayoutBtn;
+    private Button mSeeMenuBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +31,35 @@ public class MainMenu extends AppCompatActivity {
         setContentView(R.layout.activity_main_menu);
 
         startAnimation();
+        initViews();
+        initLayout();
+        setOnClickListeners();
+    }
 
-        mFirebaseUser = (FirebaseUser) getIntent().getExtras().get("user");
-        mFirestoreReference = FirebaseFirestore.getInstance();
+    private void setOnClickListeners() {
+        mSeeEmployeesBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainMenu.this, EmployeesListActivity.class));
+            }
+        });
 
+        mSeeLayoutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        mSeeMenuBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
+
+    private void initLayout() {
         String userType = getSignedUserType();
         if (userType.equalsIgnoreCase("admin")) {
             buildUIAdmin();
@@ -36,6 +68,15 @@ public class MainMenu extends AppCompatActivity {
         } else if (userType.equalsIgnoreCase("chef")) {
             buildUIChef();
         }
+    }
+
+    private void initViews() {
+        mFirebaseUser = (FirebaseUser) getIntent().getExtras().get("user");
+        mFirestoreReference = FirebaseFirestore.getInstance();
+
+        mSeeEmployeesBtn = findViewById(R.id.seeEmployeeBtnMainMenu);
+        mSeeLayoutBtn = findViewById(R.id.manageLayoutBtn);
+        mSeeMenuBtn = findViewById(R.id.seeMenuBtnMainMenu);
     }
 
     private void buildUIChef() {
