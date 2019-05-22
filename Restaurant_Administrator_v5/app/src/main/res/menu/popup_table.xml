@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/numarMasa"
+        android:title="Masa" />
+
+    <item
+        android:id="@+id/adauga_comanda"
+        android:title="- Adauga comanda." />
+
+    <item
+        android:id="@+id/anuleaza_comanda"
+        android:title="- Anuleaza comanda." />
+
+    <item
+        android:id="@+id/schimba_masa"
+        android:title="- Muta comanda la alta masa." />
+
+
+</menu>
