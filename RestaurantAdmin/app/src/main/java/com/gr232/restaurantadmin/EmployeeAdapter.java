@@ -1,5 +1,6 @@
 package com.gr232.restaurantadmin;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -7,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.gr232.restaurantadmin.activities.EditEmployeeActivity;
+import com.gr232.restaurantadmin.activities.EmployeeInfoActivity;
+import com.gr232.restaurantadmin.activities.EmployeesListActivity;
 import com.gr232.restaurantadmin.models.Employee;
 
 import java.util.List;
@@ -14,9 +18,11 @@ import java.util.List;
 public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeViewHolder> {
 
     private List<Employee> employeeList;
+    private Context context;
 
-    public EmployeeAdapter(List<Employee> employeeList) {
+    public EmployeeAdapter(List<Employee> employeeList, Context context) {
         this.employeeList = employeeList;
+        this.context = context;
     }
 
     @NonNull
@@ -56,8 +62,8 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeViewHolder> {
     }
 
     private void setOnClickListeners(@NonNull EmployeeViewHolder employeeViewHolder, final Employee emp) {
-        final EmployeesListActivity employeeListActivity = new EmployeesListActivity();
 
+        //final Context contextLocal = context;
         employeeViewHolder.getmRemove().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,22 +74,22 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeViewHolder> {
         employeeViewHolder.getmEdit().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(employeeListActivity.getApplicationContext(),
+                Intent intent = new Intent(context.getApplicationContext(),
                         EditEmployeeActivity.class);
                 intent.putExtra("employee", emp);
 
-                employeeListActivity.startActivity(intent);
+                context.startActivity(intent);
             }
         });
 
         employeeViewHolder.getmInfo().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(employeeListActivity.getApplicationContext(),
+                Intent intent = new Intent(context.getApplicationContext(),
                         EmployeeInfoActivity.class);
 
                 intent.putExtra("employee", emp);
-                employeeListActivity.startActivity(intent);
+                context.startActivity(intent);
             }
         });
     }

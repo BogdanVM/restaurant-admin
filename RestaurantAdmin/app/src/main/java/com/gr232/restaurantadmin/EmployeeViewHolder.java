@@ -17,6 +17,12 @@ public class EmployeeViewHolder extends RecyclerView.ViewHolder {
 
     public EmployeeViewHolder(@NonNull View itemView) {
         super(itemView);
+        mName = itemView.findViewById(R.id.nameTxtViewRecyclerView);
+        mType = itemView.findViewById(R.id.empTypeTxtViewRecyclerView);
+
+        mEdit = itemView.findViewById(R.id.editBtnRecyclerView);
+        mRemove = itemView.findViewById(R.id.removeBtnRecyclerView);
+        mInfo = itemView.findViewById(R.id.infoBtnRecyclerView);
     }
 
     public TextView getmName() {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EmployeesListActivity"
+    tools:context=".activities.EmployeesListActivity"
     android:background="@drawable/bkgr_animation"
     android:id="@+id/constrLayoutEmpList">
 
@@ -55,8 +55,8 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerViewEmpList"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="36dp"

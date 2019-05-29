@@ -4,11 +4,12 @@ import java.io.Serializable;
 import java.util.Calendar;
 
 public class Employee extends User implements Serializable {
-    protected Double salary;
-    protected Calendar hireDate;
+    private Double salary;
+    private Calendar hireDate;
 
-    public Employee(String userId, String firstName, String lastName, String photo,
-                    Double salary, Calendar hireDate) {
+
+    Employee(String userId, String firstName, String lastName, String photo,
+             Double salary, Calendar hireDate) {
         super(userId, firstName, lastName, photo);
         this.salary = salary;
         this.hireDate = hireDate;

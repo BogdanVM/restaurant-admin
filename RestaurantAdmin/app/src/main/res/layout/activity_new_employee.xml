@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewEmployeeActivity"
+    tools:context=".activities.NewEmployeeActivity"
     android:background="@drawable/bkgr_animation">
 
 
@@ -111,7 +111,6 @@
             android:layout_marginEnd="8dp"
 
             android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp"
             android:background="@drawable/rounded_edittext"
             android:drawableStart="@drawable/ic_mail"
             android:drawableLeft="@drawable/ic_mail"
@@ -123,13 +122,14 @@
             android:textColorHint="@color/greyHintColor"
             android:textSize="@dimen/font_size"
             app:fontFamily="@string/font_family_1"
-            app:layout_constraintBottom_toTopOf="@+id/phoneNumberTxtViewAddEmp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/pwdTxtViewAddEmp"
+            tools:layout_editor_absoluteY="157dp" />
 
         <TextView
-            android:id="@+id/phoneNumberTxtViewAddEmp"
+            android:id="@+id/pwdTxtViewAddEmp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -138,18 +138,18 @@
 
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
-            android:text="@string/phone_number_label"
+            android:text="Parola"
 
             android:textColor="@color/whiteColor"
             android:textSize="@dimen/font_size"
             app:fontFamily="@string/font_family_1"
-            app:layout_constraintBottom_toTopOf="@+id/phoneNumberEditTextAddEmp"
+            app:layout_constraintBottom_toTopOf="@+id/pwdEditTextAddEmp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
-            android:id="@+id/phoneNumberEditTextAddEmp"
+            android:id="@+id/pwdEditTextAddEmp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -158,58 +158,21 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:background="@drawable/rounded_edittext"
-            android:drawableStart="@drawable/ic_phone"
-            android:drawableLeft="@drawable/ic_phone"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawableLeft="@drawable/ic_lock"
             android:drawablePadding="10dp"
-            android:hint="@string/phone_number_hint"
+            android:hint="password"
 
-            android:inputType="phone"
+            android:inputType="textPassword"
             android:textColor="@android:color/white"
             android:textColorHint="@color/greyHintColor"
             android:textSize="@dimen/font_size"
             app:fontFamily="@string/font_family_1"
-            app:layout_constraintBottom_toTopOf="@+id/genderTxtViewAddEmp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/genderTxtViewAddEmp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginEnd="8dp"
-
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp"
-            android:text="Sex"
-
-            android:textColor="@color/whiteColor"
-            android:textSize="@dimen/font_size"
-            app:fontFamily="@string/font_family_1"
-            app:layout_constraintBottom_toTopOf="@+id/genderSpinnerAddEmp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Spinner
-            android:id="@+id/genderSpinnerAddEmp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="68dp"
-            android:hint="@string/phone_number_hint"
-            android:textSize="@dimen/font_size"
-            app:fontFamily="@string/font_family_1"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/jobTxtViewAddEmp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            tools:layout_editor_absoluteY="227dp" />
 
         <TextView
             android:id="@+id/jobTxtViewAddEmp"
@@ -221,7 +184,7 @@
 
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
-            android:text="Sex"
+            android:text="Job"
             android:textColor="@color/whiteColor"
             android:textSize="@dimen/font_size"
             app:fontFamily="@string/font_family_1"
@@ -239,17 +202,17 @@
 
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginBottom="68dp"
+            android:layout_marginBottom="8dp"
             android:hint="@string/phone_number_hint"
             android:textSize="@dimen/font_size"
             app:fontFamily="@string/font_family_1"
-            app:layout_constraintBottom_toTopOf="@+id/signupBtnSignUp"
+            app:layout_constraintBottom_toTopOf="@+id/addEmployeeBtnAddEmp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/signupBtnSignUp"
+            android:id="@+id/addEmployeeBtnAddEmp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
@@ -259,16 +222,17 @@
 
             android:layout_marginBottom="8dp"
             android:background="@drawable/rounded_button_login"
-            android:text="@string/sign_up"
+            android:text="Adauga Angajat"
             android:textColor="@color/whiteColor"
-            app:layout_constraintBottom_toTopOf="@+id/backBtnSignUp"
+            app:layout_constraintBottom_toTopOf="@+id/backBtnAddEmp"
 
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+             />
 
         <Button
-            android:id="@+id/backBtnSignUp"
+            android:id="@+id/backBtnAddEmp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
@@ -276,7 +240,6 @@
             android:layout_marginEnd="80dp"
             android:layout_marginRight="80dp"
 
-            android:layout_marginBottom="5dp"
             android:background="@drawable/rounded_button_login"
             android:text="@string/back_label"
 
@@ -285,6 +248,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
+
     </android.support.constraint.ConstraintLayout>
 
 </ScrollView>

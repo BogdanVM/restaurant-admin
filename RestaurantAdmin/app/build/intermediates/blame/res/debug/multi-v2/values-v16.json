@@ -4,7 +4,7 @@
             "outputFile": "/home/bogdanvm/Desktop/Github Repos/restaurant-admin/RestaurantAdmin/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/bogdanvm/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/5efe1b7215336640a215c3e504748a49/res/values-v16/values-v16.xml",
+                    "source": "/home/bogdanvm/.gradle/caches/transforms-2/files-2.1/3080350964c75cd7afcf1037f95256ee/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/bogdanvm/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/7b10aa3a772b9a9626041817b639e0bd/res/values-v16/values-v16.xml",
+                    "source": "/home/bogdanvm/.gradle/caches/transforms-2/files-2.1/c53833ac2fd5a1da766dd8a8882285c0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
