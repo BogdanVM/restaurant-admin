@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NewEmployeeActivity"
+    android:background="@drawable/bkgr_animation">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/addEmpTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Adauga angajat"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            app:fontFamily="@string/font_family_1"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bottomBorderAddEmp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/whiteColor"
+            app:layout_constraintTop_toBottomOf="@+id/addEmpTxtView"
+            />
+
+        <TextView
+            android:id="@+id/fullNameTxtViewAddEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+
+            android:layout_marginBottom="8dp"
+            android:text="Nume complet"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/font_size"
+
+            app:fontFamily="@string/font_family_1"
+            app:layout_constraintBottom_toTopOf="@+id/fullNameEditTxtAddEmp"
+            app:layout_constraintTop_toBottomOf="@+id/bottomBorderAddEmp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/fullNameEditTxtAddEmp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/ic_person_white"
+
+            android:drawableLeft="@drawable/ic_person_white"
+            android:drawablePadding="10dp"
+            android:hint="@string/username_hint"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/greyHintColor"
+
+            android:textSize="@dimen/font_size"
+            app:fontFamily="@string/font_family_1"
+            app:layout_constraintBottom_toTopOf="@+id/emailTxtViewAddEmp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/emailTxtViewAddEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+
+            android:layout_marginBottom="8dp"
+            android:text="@string/email_label"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/font_size"
+
+            app:fontFamily="@string/font_family_1"
+            app:layout_constraintBottom_toTopOf="@+id/mailEditTxtAddEmp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/mailEditTxtAddEmp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/ic_mail"
+            android:drawableLeft="@drawable/ic_mail"
+            android:drawablePadding="10dp"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/greyHintColor"
+            android:textSize="@dimen/font_size"
+            app:fontFamily="@string/font_family_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/pwdTxtViewAddEmp"
+            tools:layout_editor_absoluteY="157dp" />
+
+        <TextView
+            android:id="@+id/pwdTxtViewAddEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Parola"
+
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/font_size"
+            app:fontFamily="@string/font_family_1"
+            app:layout_constraintBottom_toTopOf="@+id/pwdEditTextAddEmp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/pwdEditTextAddEmp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:hint="password"
+
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/greyHintColor"
+            android:textSize="@dimen/font_size"
+            app:fontFamily="@string/font_family_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/jobTxtViewAddEmp"
+            tools:layout_editor_absoluteY="227dp" />
+
+        <TextView
+            android:id="@+id/jobTxtViewAddEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Job"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/font_size"
+            app:fontFamily="@string/font_family_1"
+            app:layout_constraintBottom_toTopOf="@+id/jobSpinnerAddEmp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/jobSpinnerAddEmp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/phone_number_hint"
+            android:textSize="@dimen/font_size"
+            app:fontFamily="@string/font_family_1"
+            app:layout_constraintBottom_toTopOf="@+id/addEmployeeBtnAddEmp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/addEmployeeBtnAddEmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button_login"
+            android:text="Adauga Angajat"
+            android:textColor="@color/whiteColor"
+            app:layout_constraintBottom_toTopOf="@+id/backBtnAddEmp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+        <Button
+            android:id="@+id/backBtnAddEmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+
+            android:background="@drawable/rounded_button_login"
+            android:text="@string/back_label"
+
+            android:textColor="@color/whiteColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

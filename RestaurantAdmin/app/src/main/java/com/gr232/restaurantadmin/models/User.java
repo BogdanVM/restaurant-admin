@@ -1,19 +1,16 @@
 package com.gr232.restaurantadmin.models;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-
 public abstract class User {
-    protected String userId;
-    protected String firstName;
-    protected String lastName;
-    protected String photo;
-    protected String type;
+    private String userId;
+    private String firstName;
+    private String lastName;
+    private String photo;
 
-    public User() { }
+    String type;
 
-    public User(String userId, String firstName, String lastName, String photo) {
+    User() { }
+
+    User(String userId, String firstName, String lastName, String photo) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -36,14 +33,6 @@ public abstract class User {
         this.lastName = lastName;
     }
 
-    public String getPhoto() {
-        return photo;
-    }
-
-    public void setPhoto(String profilePhoto) {
-        this.photo = profilePhoto;
-    }
-
     public String getUserId() {
         return userId;
     }
@@ -55,4 +44,5 @@ public abstract class User {
     public String getType() {
         return type;
     }
+
 }
