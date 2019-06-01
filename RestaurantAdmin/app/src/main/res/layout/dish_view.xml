@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/dishNameTxtViewRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteColor"
+            app:fontFamily="@string/font_family_1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/ingredientsTxtViewMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteColor"
+            app:fontFamily="@string/font_family_1"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/dishNameTxtViewRecyclerView"
+            app:layout_constraintHorizontal_bias="0.433"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dishNameTxtViewRecyclerView"
+            />
+
+        <TextView
+            android:id="@+id/priceTxtViewMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/whiteColor"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:fontFamily="@string/font_family_1"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.509" />
+
+        <TextView
+            android:id="@+id/weightTxtViewMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:textColor="@color/whiteColor"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:fontFamily="@string/font_family_1"
+
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/priceTxtViewMenu"
+            app:layout_constraintStart_toEndOf="@+id/dishNameTxtViewRecyclerView"
+            app:layout_constraintTop_toBottomOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

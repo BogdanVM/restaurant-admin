@@ -1,10 +1,12 @@
-package com.gr232.restaurantadmin;
+package com.gr232.restaurantadmin.recyclerviews.employee;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.gr232.restaurantadmin.R;
 
 public class EmployeeViewHolder extends RecyclerView.ViewHolder {
 

@@ -1,4 +1,4 @@
-package com.gr232.restaurantadmin;
+package com.gr232.restaurantadmin.recyclerviews.employee;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,9 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.gr232.restaurantadmin.R;
 import com.gr232.restaurantadmin.activities.EditEmployeeActivity;
 import com.gr232.restaurantadmin.activities.EmployeeInfoActivity;
-import com.gr232.restaurantadmin.activities.EmployeesListActivity;
 import com.gr232.restaurantadmin.models.Employee;
 
 import java.util.List;
