@@ -17,7 +17,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.gr232.restaurantadmin.EmployeeAdapter;
+import com.gr232.restaurantadmin.recyclerviews.employee.EmployeeAdapter;
 import com.gr232.restaurantadmin.R;
 import com.gr232.restaurantadmin.models.Chef;
 import com.gr232.restaurantadmin.models.Employee;

@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.ViewHallActivity"
-            android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name=".NewDishActivity"></activity>
+        <activity android:name=".MenuActivity" />
+        <activity
+            android:name=".activities.ViewHallActivity"
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".activities.HallActivity"
-            android:screenOrientation="sensorLandscape"></activity>
+            android:screenOrientation="sensorLandscape" />
         <activity android:name=".activities.EmployeeInfoActivity" />
         <activity android:name=".activities.EditEmployeeActivity" />
         <activity android:name=".activities.NewEmployeeActivity" />
