@@ -7,6 +7,10 @@ import android.widget.TextView;
 
 import com.gr232.restaurantadmin.R;
 
+/**
+ * Clasa de tip ViewHolder care primeste elementele vizuale corespunzatoare fisierului XML:
+ *          "dish_view.xml"
+ */
 public class DishViewHolder extends RecyclerView.ViewHolder {
 
     private TextView mDishName;

@@ -28,6 +28,14 @@ import com.gr232.restaurantadmin.R;
 import com.gr232.restaurantadmin.helpers.DatabaseHelper;
 import com.gr232.restaurantadmin.helpers.VerificaConexiune;
 
+/**
+ * Clasa corespunzatoare activitatii unde va putea fi reincarcata ultima planificare a restaurantului.
+ * Contine:
+ * - un buton care reincarca planificarea;
+ * - un relativelayout unde va fi afisata reincarcarea;
+ * - referinte catre bazele de date locala, respectiv externa.
+ *
+ */
 public class ViewHallActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
 
@@ -91,6 +99,13 @@ public class ViewHallActivity extends AppCompatActivity implements PopupMenu.OnM
         }
     }
 
+    /**
+     * - Daca utilizatorul este conectat la internet, se cauta in baza de date externa,
+     * altfel in cea locala.
+     *
+     * - Se cauta in baza de date corespunzătoare ultima planificare și se extrage celula cu
+     * celula, urmând ca apoi interfața să fie actualizată cu acea planificare.
+     */
     public void ReincarcaPlanificarea() {
         reincarca_planificarea.setOnClickListener(
                 new View.OnClickListener() {

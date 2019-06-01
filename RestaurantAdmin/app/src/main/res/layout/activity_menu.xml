@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bkgr_animation"
     android:id="@+id/constrLayoutMenu"
-    tools:context=".MenuActivity">
+    tools:context=".activities.MenuActivity">
 
 
     <TextView

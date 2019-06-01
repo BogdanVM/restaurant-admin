@@ -1,7 +1,9 @@
-package com.gr232.restaurantadmin;
+package com.gr232.restaurantadmin.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.gr232.restaurantadmin.R;
 
 public class NewDishActivity extends AppCompatActivity {
 

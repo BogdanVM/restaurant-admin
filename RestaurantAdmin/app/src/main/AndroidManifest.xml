@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewDishActivity"></activity>
-        <activity android:name=".MenuActivity" />
+        <activity android:name=".activities.NewDishActivity"></activity>
+        <activity android:name=".activities.MenuActivity" />
         <activity
             android:name=".activities.ViewHallActivity"
             android:screenOrientation="sensorLandscape" />

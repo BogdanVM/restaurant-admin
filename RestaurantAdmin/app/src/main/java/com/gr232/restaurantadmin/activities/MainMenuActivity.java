@@ -17,6 +17,11 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.gr232.restaurantadmin.R;
 
+/**
+ * Clasa in care va fi afisat meniul principal.
+ *
+ * TODO Implementeaza metodele "buildUIChef()", "buildUIWaiter()", care vor face aceasta clasa dinamica
+ */
 public class MainMenuActivity extends AppCompatActivity {
 
     private FirebaseFirestore mFirestoreReference;
@@ -55,7 +60,7 @@ public class MainMenuActivity extends AppCompatActivity {
         mSeeMenuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(MainMenuActivity.this, MenuActivity.class));
             }
         });
     }
@@ -89,9 +94,17 @@ public class MainMenuActivity extends AppCompatActivity {
     }
 
     private void buildUIAdmin() {
-        /* TODO Build UI for an admin type user */
+        /* UI pentru admin este deja construit */
     }
 
+    /**
+     * Se cauta in Firebase utilizatorul cu id-ul lui mFirebaseUser.
+     * Odata gasit, se intoarce tipul acestuia.
+     * Pentru a putea salva tipul utilizatorului, s-a folosit un array final: "final String[]",
+     * fiindca doar se astfel se pot retine date dintr-o clasa anonima (OnCompleteListener).
+     *
+     * @return un string reprezentand tipul utilizatorului conectat: "admin", "waiter", "chef".
+     */
     private String getSignedUserType() {
         final String[] userType = {""};
         mFirestoreReference.collection("Employees")

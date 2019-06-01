@@ -1,6 +1,5 @@
 package com.gr232.restaurantadmin.recyclerviews.dish;
 
-import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,10 +8,13 @@ import android.view.ViewGroup;
 
 import com.gr232.restaurantadmin.R;
 import com.gr232.restaurantadmin.models.Dish;
-import com.gr232.restaurantadmin.recyclerviews.employee.EmployeeViewHolder;
 
 import java.util.List;
 
+/**
+ * Clasa de tip Adapter necesara RecyclerView-ului din activitatea MenuActivity.
+ * Primeste o lista de obiecte de tip Dish, pe care le afiseaza intr-un DishViewHolder.
+ */
 public class DishAdapter extends RecyclerView.Adapter<DishViewHolder> {
     private List<Dish> dishList;
 
@@ -29,6 +31,11 @@ public class DishAdapter extends RecyclerView.Adapter<DishViewHolder> {
         return new DishViewHolder(itemView);
     }
 
+    /**
+     * Se creeaza cardul corespunzator obiectului de tip Dish de pe pozitia i
+     * @param dishViewHolder obiect de tip DishViewHolder = sablonul unui card
+     * @param i indexul obiectului de tip Dish care trebuie afisat
+     */
     @Override
     public void onBindViewHolder(@NonNull DishViewHolder dishViewHolder, int i) {
         Dish dish = dishList.get(i);

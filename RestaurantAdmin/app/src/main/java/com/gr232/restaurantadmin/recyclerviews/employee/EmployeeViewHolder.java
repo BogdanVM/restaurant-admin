@@ -8,6 +8,10 @@ import android.widget.TextView;
 
 import com.gr232.restaurantadmin.R;
 
+/**
+ * Clasa de tip ViewHolder care primeste elementele vizuale corespunzatoare fisierului XML:
+ *          "employee_view.xml"
+ */
 public class EmployeeViewHolder extends RecyclerView.ViewHolder {
 
     private TextView mName;
