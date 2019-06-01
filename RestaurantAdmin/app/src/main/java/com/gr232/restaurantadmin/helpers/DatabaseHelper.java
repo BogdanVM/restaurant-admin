@@ -6,15 +6,18 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+/**
+ * Clasa care creeaza baza de date locala SQLite cu care lucreaza aplicatia.
+ */
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "PLANIFICARE_RESTAURANT.db";
-    public static final String TABLE_NAME = "TABEL_CELULA";
-    public static final String COL_1 = "CELULA_ID";
-    public static final String COL_2 = "VECIN_SUS";
-    public static final String COL_3 = "VECIN_STANGA";
-    public static final String COL_4 = "CONTINUT";
-    public static final String COL_5 = "NUMAR";
+    private static final String DATABASE_NAME = "PLANIFICARE_RESTAURANT.db";
+    private static final String TABLE_NAME = "TABEL_CELULA";
+    private static final String COL_1 = "CELULA_ID";
+    private static final String COL_2 = "VECIN_SUS";
+    private static final String COL_3 = "VECIN_STANGA";
+    private static final String COL_4 = "CONTINUT";
+    private static final String COL_5 = "NUMAR";
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);

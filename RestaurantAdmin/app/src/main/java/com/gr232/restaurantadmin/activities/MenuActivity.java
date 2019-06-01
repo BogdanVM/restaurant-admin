@@ -1,4 +1,4 @@
-package com.gr232.restaurantadmin;
+package com.gr232.restaurantadmin.activities;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.support.annotation.NonNull;
@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.gr232.restaurantadmin.R;
 import com.gr232.restaurantadmin.models.Dish;
 import com.gr232.restaurantadmin.models.Employee;
 import com.gr232.restaurantadmin.recyclerviews.dish.DishAdapter;
@@ -23,6 +24,9 @@ import com.gr232.restaurantadmin.recyclerviews.employee.EmployeeAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clasa activitatii in care va fi afisat meniul de preparate.
+ */
 public class MenuActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
@@ -51,10 +55,13 @@ public class MenuActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Folosind referinta catre firebase sunt extrase preparatele din colectia ”Dishes”
+     * si sunt apoi adaugate in lista ”dishList”.
+     */
     private void initData() {
         FirebaseFirestore firestoreReference = FirebaseFirestore.getInstance();
-        firestoreReference.collection("Employees")
-                .whereGreaterThan("type", "admin")
+        firestoreReference.collection("Dishes")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override

@@ -27,6 +27,9 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+/**
+ * Clasa corespunzatoare activitatii care afiseaza lista cu toti angajatii.
+ */
 public class EmployeesListActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;

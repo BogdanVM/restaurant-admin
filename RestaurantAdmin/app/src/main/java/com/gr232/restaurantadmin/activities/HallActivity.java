@@ -39,6 +39,9 @@ import java.util.Deque;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Clasa corespunzatoare activitatii care va permite modificarea planificarii restaurantului.
+ */
 public class HallActivity extends AppCompatActivity {
 
     DatabaseHelper myDb;
@@ -159,6 +162,13 @@ public class HallActivity extends AppCompatActivity {
         return latime_ecran / 100;
     }
 
+    /**
+     * La apasarea butonului ”start” se formeaza matricea plansei prin apeluri utile ale metodelor:
+     *          ”get_numar_celula_latime()”,  ”get_numar_celule_inaltime()”.
+     *
+     * Se creeaza celulele care sunt adaugate la RelativeLayout-ul mare, pentru a putea fi modificat
+     * ulterior continutul lor.
+     */
     public void ConstruiestePlanificarea() {
         start.setOnClickListener(
                 new View.OnClickListener() {
@@ -201,6 +211,10 @@ public class HallActivity extends AppCompatActivity {
         );
     }
 
+    /**
+     * La apasarea sagetii dreapta, se vor schimba imaginiile care pot fi adaugate RelativeLayout-ului.
+     * Se verifica elementele vizibile care sunt transformate in invizibil, si invers.
+     */
     public void SchimbaLegendaDreapta() {
         imageView_dreapta.setOnClickListener(
                 new View.OnClickListener() {
@@ -229,6 +243,10 @@ public class HallActivity extends AppCompatActivity {
         );
     }
 
+    /**
+     * La apasarea sagetii stanga, se vor schimba imaginiile care pot fi adaugate RelativeLayout-ului.
+     * Se verifica elementele vizibile care sunt transformate in invizibil, si invers.
+     */
     public void SchimbaLegendaStanga() {
         imageView_stanga.setOnClickListener(
                 new View.OnClickListener() {
@@ -258,6 +276,10 @@ public class HallActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Se insereaza celulele in baza de date locala (SQLite) si externa (Firebase Firestore).
+     * Se trateaza cazurile speciale (prima coloana, prima linie, ultima coloana, ultima linie).
+     */
     public void AddData() {
 
         Cursor res = myDb.getAllData();
@@ -406,6 +428,11 @@ public class HallActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Se updateaza continutul celulei in baza de date locala SQLite.
+     * @param celula_id id-ul celulei
+     * @param continut continutul care trebuie actualizat
+     */
     public void UpdateCellContent(String celula_id, final String continut) {
 
         boolean isUpdated = myDb.updateCellContent(celula_id, continut);
@@ -416,6 +443,11 @@ public class HallActivity extends AppCompatActivity {
             Toast.makeText(HallActivity.this, "Data not updated", Toast.LENGTH_LONG).show();
     }
 
+    /**
+     * Se updateaza numarul tabelului in baza de date locala SQLite.
+     * @param celula_id
+     * @param numar
+     */
     public void UpdateTableNumber(String celula_id, final int numar) {
 
         boolean isUpdated = myDb.updateTableNumber(celula_id, numar);
@@ -551,6 +583,10 @@ public class HallActivity extends AppCompatActivity {
         return idElement;
     }
 
+    /**
+     * Aceasta clasa detecteaza ”ridicarea” unei imagini (evenimentul de drag).
+     * In momentul in care acest eveniment are loc, este salvat id-ul imaginii selectate.
+     */
     private final class MyTouchListener implements View.OnTouchListener {
 
         public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -572,6 +608,11 @@ public class HallActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Prin aceasta clasa este implementat evenimentul de drag and drop pentru imagini.
+     * Este implementata interfata OnDragListener, iar in cazul evenimentului onDrop, este
+     * updatat continutul celulei unde a fost lasata imaginea.
+     */
     class MyDragListener implements View.OnDragListener {
 
         @Override

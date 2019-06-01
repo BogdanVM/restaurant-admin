@@ -19,6 +19,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.gr232.restaurantadmin.R;
 
+/**
+ * Clasa corespunzatoare activitatii cu care se deschide aplicatia.
+ * Acesta este meniul de autentificare.
+ */
 public class MainActivity extends AppCompatActivity {
 
     private EditText mEmailEditTxt;
@@ -43,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
         getSignedUser(user);
     }
 
+    /**
+     * Daca obiectul user este diferit de null, atunci porneste un nou intent catre activitatea
+     * MainMenuActivity.class. In acel intent este transmis obiectul user prin
+     * 'intent.putExtra("user", user)'. In final, activitatea este schimbata si MainActivity este
+     * inchisa.
+     * @param user utilizatorul curent conectat
+     */
     private void getSignedUser(FirebaseUser user) {
         if (user != null) {
             Intent intent = new Intent(MainActivity.this, MainMenuActivity.class);

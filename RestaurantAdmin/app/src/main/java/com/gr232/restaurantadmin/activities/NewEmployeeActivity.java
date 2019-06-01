@@ -20,6 +20,10 @@ import com.gr232.restaurantadmin.R;
 import com.gr232.restaurantadmin.models.Chef;
 import com.gr232.restaurantadmin.models.Waiter;
 
+/**
+ * Clasa activitatii care permite inserarea unui nou angajat in baza de date.
+ * Primeste elementele vizuale drept campuri si o referinta catre firebase.
+ */
 public class NewEmployeeActivity extends AppCompatActivity {
 
 
@@ -44,6 +48,12 @@ public class NewEmployeeActivity extends AppCompatActivity {
         initClickListeners();
     }
 
+    /**
+     * - Adaugam in elementul de tip ”Spinner” (ComboBox) sirurile de caractere care vor fi optiunile
+     * de selectat: ”Bucatar”, ”Ospatar”.
+     * - Folosim un ArrayAdapter<String> care primeste un array de string-uri.
+     * - La final apelam "spinner.setAdapter".
+     */
     private void initSpinner() {
         String[] jobs = {"Ospatar", "Bucatar"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,
@@ -55,7 +65,11 @@ public class NewEmployeeActivity extends AppCompatActivity {
 
     /**
      * Se trateaza evenimentele de onclick ale celor doua butoane.
-     * - In cazul selectarii butonului "Adauga angajat", se insereaza in baza de date noul angajat;
+     * - In cazul selectarii butonului "Adauga angajat", se insereaza in baza de date noul angajat.
+     * Intai se creeaza contul angajatului cu o instanta a clasei FirebaseAuth.
+     * Daca acest cont s-a creat cu succes, se obtine id-ul si se adauga si in baza de date angajatul
+     * folosind FirebaseFirestore;
+     *
      * - In cazul selectarii butonului "Inapoi", se inchide activitatea curenta
      */
     private void initClickListeners() {
@@ -155,6 +169,9 @@ public class NewEmployeeActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Initializam elementele vizuale cu cele corespunzatoare din fisierul XML.
+     */
     private void initViews() {
         mFullNameEditTxt = findViewById(R.id.fullNameEditTxtAddEmp);
         mEmailEditTxt = findViewById(R.id.mailEditTxtAddEmp);

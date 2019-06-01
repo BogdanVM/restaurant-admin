@@ -15,6 +15,10 @@ import com.gr232.restaurantadmin.models.Employee;
 
 import java.util.List;
 
+/**
+ * Clasa de tip Adapter necesara RecyclerView-ului din activitatea EmployeesListActivity.
+ * Primeste o lista de obiecte de tip Employee, pe care le afiseaza intr-un EmployeeViewHolder.
+ */
 public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeViewHolder> {
 
     private List<Employee> employeeList;
@@ -34,6 +38,11 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeViewHolder> {
         return new EmployeeViewHolder(itemView);
     }
 
+    /**
+     * Se creeaza cardul corespunzator obiectului de tip Employee de pe pozitia i
+     * @param employeeViewHolder obiect de tip EmployeeViewHolder = sablonul unui card
+     * @param i indexul obiectului de tip Employee care trebuie afisat
+     */
     @Override
     public void onBindViewHolder(@NonNull EmployeeViewHolder employeeViewHolder, int i) {
         Employee employee = employeeList.get(i);
