@@ -1,3 +1,9 @@
+# Sursele JAVA
+RestaurantAdmin -> app -> src -> main -> java -> ...
+
+# Sursele XML
+RestaurantAdmin -> app -> src -> main -> res -> layout -> ...
+
 # Administrator de Restaurant (varianta beta)
 
 Aceasta este o aplicatie de gestionare a unui restaurant. Exista mai multe tipuri de utilizatori:
